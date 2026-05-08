@@ -1,9 +1,10 @@
 # The Weaver’s Pick Counter
 	
 Description:
+
 The Weaver’s Pick Counter is a mobile application for collectors of textile antiquities, historians of the garment industry, and preservers of industrial weaving heritage, dedicated to cataloging the specialized magnification and measurement tools used to analyze fabric density and yarn quality that have been replaced by digital textile analyzers and high-speed camera sensors. Systematize your collection of the "eyes of the mill"—from folding brass "louping" glasses used for counting picks and ends to precision yarn reels for measuring thread weight, from hand - cranked twist testers to specialized cloth balances and silver-cased thread counters. Create a digital archive of textile craftsmanship by recording the instrument type, manufacturer, magnification power, era, and the specific mill or weaving tradition each specimen represents. 
 
-##Example Object Fields (The "Textile Instrument" Model):
+## Example Object Fields (The "Textile Instrument" Model):
 
 •	Loom Identifier: Unique code (e.g., "TWPC-MACBETH-1920-LANCASHIRE-047"). 
 
