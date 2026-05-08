@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Mill Floor Precision" — the UI draws from the aesthetic of a premium textile brand's lookbook crossed with a scientific instrument catalog. Think the design sensibility of a high-end loom manufacturer's documentation, or a contemporary craft brand that takes material science seriously: tight grid layouts, precise typographic spacing, and a palette pulled directly from undyed natural fibers and mill-floor metals. The instruments were used to examine fabric at the thread level — the UI should reward that same close attention to detail.
+Mood: fine-grained, crafted, precise, tactile-adjacent, quietly luxurious.
+Important: No fabric texture overlays, no woven-grid backgrounds, no loom illustrations used as decoration. The tools were scientific instruments — the app catalogs them with the same seriousness a watchmaker would bring to horology. The craft is in the objects, not the interface.
+
+2. COLORS
+#F7F5F2 — Main background (undyed linen — the warmest off-white in the series, like raw cotton card)
+#1A1714 — Primary text & high-contrast elements (mill black — warm, dense, like printer's ink on cloth)
+#FFFFFF — Secondary panels / card surfaces
+#7C7870 — Secondary text / muted labels (aged selvage, warm grey)
+#5C4A8A — Primary accent (thread violet — the color of aniline dye in its earliest industrial form, the first synthetic textile dye, referencing the chemical revolution that transformed the mills. Deep, considered, unexpected)
+#EAE7E0 — Outline / stroke / dividers (natural fiber rule lines, warm)
+#B07A2E — Secondary accent (brass loupe gold — the color of a folding loupe housing, a yarn reel fitting, a twist tester frame. For era tags, material indicators, magnification badges)
+#C0392B — Critical errors only
+Important: Thread violet is the most distinctive accent in the entire app series — it should feel considered and intentional, not arbitrary. It references real textile history: William Perkin's discovery of mauveine in 1856 transformed the mills that these instruments served. Violet for action, gold for information. Never shared on the same element. The warm linen background is the warmest in the series and must be preserved — it gives the whole UI a tactile quality without using a single texture.
+
+3. TYPOGRAPHY
+Display / Headings: DM Serif Display (weight 400) — elegant, wide-set, with the refined authority of a textile house's letterhead. At large sizes it references the engraved trade cards and mill catalogues these instruments were sold through. Used exclusively for instrument names on detail views and the app title.
+Body / Descriptions: DM Sans (weight 300–400) — its natural companion. Clean, modern, readable. For all prose: condition notes, mill history, magnification specs.
+Monospace / Identifiers: Fira Code — for archive codes like WPC-COIL-LOUPING-1889-GBR-YORKSHIRE-022, thread counts (280 EPI), magnification values (10×), yarn weights (2/48 Nm), and all structured technical fields.
+Important: DM Serif Display and DM Sans are a designed pairing — they share proportional DNA and feel like a single design system at different registers. Serif at 26px and above only. Fira Code for any field that contains a number, unit, or code — never DM Sans for technical values.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat warm linen white — no grain, no weave pattern, no noise
+Cards: pure white with a 1px border at #EAE7E0 and 10px corner radius — instrument record cards, clean and warm
+Thread count motif: each list card features a small SVG — a minimal grid of evenly spaced horizontal and vertical lines representing a fabric weave at the thread level, with line density reflecting the instrument's measurement range (fine-pitch grid for high-count instruments, open grid for coarser tools). Grid lines in violet for operational instruments, gold for display pieces. This is the unique visual identity of this app in the series.
+Magnification badge: each card shows the instrument's magnification or count range in Fira Code — 10×, 280 EPI max, 0–500 TPM — in a small bordered pill. The first thing a collector looks at.
+Photography: instrument photography on warm white — the optical element, scale face, or measuring surface forward. For loupes, show the lens open. For reels, show the counter face. No props.
+Mill region tag: small pill showing the weaving tradition or origin — West Riding, Lyonnais, Lowell MA, Osaka — in violet at 10% opacity fill with full violet text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 200–230ms ease-in-out — smooth and considered, like thread under even tension
+Selected state: violet left-border (3px) + faint #F3F0FA background tint on active cards
+Empty states: NO INSTRUMENTS IN THIS COUNTER YET. in Fira Code, centered, muted warm grey — one line
+Loading: a thin violet progress bar at screen top — no spinner, no skeleton screens
+Navigation: bottom tab bar — four tabs: Counter, Mill Map, Logbook, Settings. Active tab in violet.
+Weaving tradition filter: a first-class filter chip row — Worsted, Woollen, Silk, Cotton, Linen, Synthetic — because fiber type determines the instrument's calibration and is the primary sorting axis for serious collectors
+
+Important: The thread-grid SVG on each card is the most refined motif in the series — a micro-grid of crossing lines that reads as fabric at a glance. Density is data. Violet lines mean the instrument is operational and complete; gold lines mean display condition or incomplete. A collector should be able to scan the list view and read condition and instrument class simultaneously from the grid density and color alone, before reading a single word.
